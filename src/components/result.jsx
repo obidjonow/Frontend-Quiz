@@ -17,7 +17,7 @@ function Result({ title, color, icon, correctAnswerCount, questions }) {
             </figure>
             <span>{title}</span>
           </div>
-          <div className="big-text">{correctAnswerCount}</div>
+          <div className="big-text">{correctAnswerCount}/30</div>
           <p>out of {questions.length}</p>
         </div>
         <Link className="btn" to="/">

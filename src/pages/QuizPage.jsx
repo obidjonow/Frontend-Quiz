@@ -4,28 +4,34 @@ import { useEffect } from "react";
 import { Test } from "../components";
 
 function QuizPage() {
-  
   const { title } = useParams();
 
   const {
-    data: quizzes,
+    data,
     isPending,
     error,
-  } = useFetch("http://localhost:3000/quizzes");
+  } = useFetch("/db.json");
 
   useEffect(() => {
     document.title = "Quiz " + title;
   }, [title]);
 
-  const currentQuiz = quizzes?.find((quiz) => quiz.title === title);
+  const quizzes = data?.quizzes;
+
+  const currentQuiz = quizzes?.find(
+    (quiz) => quiz.title === title
+  );
 
   return (
     <section className="quiz-container container">
       {isPending && <h3>Loading...</h3>}
+
       {error && <h3>{error}</h3>}
+
       {currentQuiz && <Test questions={currentQuiz} />}
     </section>
   );
 }
 
 export default QuizPage;
+

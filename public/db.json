@@ -1,0 +1,583 @@
+{
+  "quizzes": [
+    {
+      "title": "HTML",
+      "color": "#FFF1E9",
+      "icon": "/assets/icon-html.svg",
+      "questions": [
+      {
+      "question": "HTML tilining asosiy va fundamental vazifasi nima?",
+      "options": [
+        "Veb-sahifaning semantik strukturasi va mazmuniy skeletini yaratish",
+        "Sahifaga vizual effektlar, ranglar va moslamuvchan dizayn berish",
+        "Server bilan ma'lumot almashish va ma'lumotlar bazasini boshqarish",
+        "Murakkab mantiqiy amallar va matematik hisob-kitoblarni bajarish"
+      ],
+      "answer": "Veb-sahifaning semantik strukturasi va mazmuniy skeletini yaratish"
+    },
+    {
+      "question": "Semantik <main> tegi qanday maqsadda ishlatiladi?",
+      "options": [
+        "Navigatsiya menyusi va ijtimoiy tarmoq linklarini joylash uchun",
+        "Sahifaning faqat bir marta ishlatiladigan asosiy kontent qismini ajratish uchun",
+        "Yon panel (sidebar) va reklamalar blokini yaratish uchun",
+        "Sahifaning eng yuqori qismidagi sarlavha va logotipni joylash uchun"
+      ],
+      "answer": "Sahifaning faqat bir marta ishlatiladigan asosiy kontent qismini ajratish uchun"
+    },
+    {
+      "question": "Giperhavola yaratuvchi <a> tegi qanday vazifani bajaradi?",
+      "options": [
+        "Sahifaga tashqi rasm yoki media fayllarni integratsiya qiladi",
+        "Ma'lumotlarni tartiblash uchun murakkab jadvallar hosil qiladi",
+        "Foydalanuvchini boshqa sahifaga yoki URL manzilga yo'naltiruvchi bog'lama yaratadi",
+        "Foydalanuvchidan ma'lumot yig'ish uchun maydon hosil qiladi"
+      ],
+      "answer": "Foydalanuvchini boshqa sahifaga yoki URL manzilga yo'naltiruvchi bog'lama yaratadi"
+    },
+    {
+      "question": "<img> tegida rasm manzilini ko'rsatish uchun qaysi atributdan foydalaniladi?",
+      "options": [
+        "alt",
+        "href",
+        "link",
+        "src"
+      ],
+      "answer": "src"
+    },
+        {
+      "question": "alt atributining veb-standartlardagi asosiy foydasi nimada?",
+      "options": [
+        "Rasm hajmini avtomatik ravishda piksellarda kattalashtiradi",
+        "Rasm yuklanmaganda alternativ matn ko'rsatadi va accessibility uchun xizmat qiladi",
+        "Rasmga rangli filtrlar va turli vizual effektlar beradi",
+        "Rasmni sahifaning markaziga moslashtiradi"
+      ],
+      "answer": "Rasm yuklanmaganda alternativ matn ko'rsatadi va accessibility uchun xizmat qiladi"
+    },
+    {
+      "question": "<form> tegi veb-dasturlashda nima uchun ishlatiladi?",
+      "options": [
+        "Sahifaning umumiy dizayni va joylashuvini boshqarish uchun",
+        "Video va audio fayllarni ijro etuvchi pleyer yaratish uchun",
+        "Foydalanuvchi ma'lumotlarini yig'ish va serverga yuborish uchun",
+        "Sahifada dinamik rasmlar galereyasini hosil qilish uchun"
+      ],
+      "answer": "Foydalanuvchi ma'lumotlarini yig'ish va serverga yuborish uchun"
+    },
+    {
+      "question": "<input type=\"password\"> turining o'ziga xosligi nimada?",
+      "options": [
+        "U faqat katta harflardan iborat matnni qabul qiladi",
+        "Kiritilgan ma'lumotni avtomatik ravishda server bazasiga saqlaydi",
+        "Email formatini tekshiradi va xatolikni ko'rsatadi",
+        "Kiritilgan belgilarni nuqta yoki yulduzchalar yordamida yashirib ko'rsatadi"
+      ],
+      "answer": "Kiritilgan belgilarni nuqta yoki yulduzchalar yordamida yashirib ko'rsatadi"
+    },
+    {
+      "question": "Input elementlarida required atributi qanday mexanizmni ishga tushiradi?",
+      "options": [
+        "Maydonni to'ldirilishi majburiy qiladi va bo'sh bo'lsa formani yuborishni taqiqlaydi",
+        "Input maydonini sahifadan butunlay yashirib qo'yadi",
+        "Matn rangini avtomatik ravishda qizilga o'zgartiradi",
+        "Inputning ichidagi ma'lumotni o'chirib tashlaydi"
+      ],
+      "answer": "Maydonni to'ldirilishi majburiy qiladi va bo'sh bo'lsa formani yuborishni taqiqlaydi"
+    },
+    {
+      "question": "<table> tegi  HTMlda nimani tashkil qiladi",
+      "options": [
+        "Sahifaning dizayn panjarasini",
+        "Videolarni guruhlash uchun blok",
+        "Ma'lumotlarni qator va ustunlar shaklida ko'rsatuvchi jadval",
+        "JavaScript kodlarini jadval ko'rinishida saqlaydi"
+      ],
+      "answer": "Ma'lumotlarni qator va ustunlar shaklida ko'rsatuvchi jadval"
+    },
+    {
+      "question": "<button> tegining <input type=\"button\"> dan afzalligi nimada?",
+      "options": [
+        "U faqat matnli ma'lumotlarni ko'rsata oladi",
+        "HTML standartlari tomonidan qo'llab-quvvatlanmaydi",
+        "Hech qanday afzallikka ega emas, ikkalasi bir xil",
+        "Uning ichida boshqa elementlarni (icon, span) ishlatish mumkin"
+      ],
+      "answer": "Uning ichida boshqa elementlarni (icon, span) ishlatish mumkin"
+    },
+    {
+      "question": "Radio button (radio tugmasi) qanday mantiqiy vaziyatda ishlatiladi?",
+      "options": [
+        "Ro'yxatdan bir nechta variantni tanlash imkonini berish uchun",
+        "Taqdim etilgan variantlar guruhidan faqat bittasini tanlash kerak bo'lganda",
+        "Uzun matnli xabarlarni yozish uchun",
+        "Foydalanuvchidan fayl yuklashni talab qilish uchun"
+      ],
+      "answer": "Taqdim etilgan variantlar guruhidan faqat bittasini tanlash kerak bo'lganda"
+    },
+    {
+      "question": "Checkbox elementi nimani anglatadi va qachon qo'llaniladi?",
+      "options": [
+        "Faqat bitta majburiy tanlovni bildiradi",
+        "Faqat raqamli ma'lumotlarni kiritish uchun xizmat qiladi",
+        "Foydalanuvchiga bir nechta variantni bir vaqtda tanlash imkonini beradi",
+        "Parolni qayta tiklash maydoni hisoblanadi"
+      ],
+      "answer": "Foydalanuvchiga bir nechta variantni bir vaqtda tanlash imkonini beradi"
+    },
+    {
+      "question": "<textarea> tegi qachon va nima uchun ishlatiladi?",
+      "options": [
+        "Sahifada dinamik rasmlarni ko'rsatish zarur bo'lganda",
+        "Ko'p qatorli matn (izoh, xat) yozish uchun",
+        "Video fayllarni yuklash jarayonini ko'rsatish uchun",
+        "Sahifadagi barcha havolalarni guruhlash uchun"
+      ],
+      "answer": "Ko'p qatorli matn (izoh, xat) yozish uchun"
+    },
+    {
+      "question": "<select> tegi HTMLda nimani bildiradi?",
+      "options": [
+        "Galereyadagi rasmlarni tanlash uchun rasm bloki",
+        "Ochiluvchi dropdown ro'yxat yaratish uchun",
+        "Sahifa fonining rangini tanlash uchun pleyer",
+        "JavaScript skriptlarini tanlash uchun konteyner"
+      ],
+      "answer": "Ochiluvchi dropdown ro'yxat yaratish uchun"
+    },
+    {
+      "question": "<option selected> atributi qanday vazifani bajaradi?",
+      "options": [
+        "Variantni ro'yxatdan butunlay yashiradi",
+        "Tanlangan variantga alohida rang beradi",
+        "Sahifa yuklanganda ma'lum bir variantni oldindan tanlangan holatda ko'rsatadi",
+        "Variantni bosib bo'lmaydigan qilib qo'yadi"
+      ],
+      "answer": "Sahifa yuklanganda ma'lum bir variantni oldindan tanlangan holatda ko'rsatadi"
+    },
+    {
+      "question": "<input type=\"file\"> elementining asosiy vazifasi nima?",
+      "options": [
+        "Foydalanuvchiga o'z qurilmasidan fayl tanlash va serverga yuklash imkonini beradi",
+        "Sahifaga tayyor rasm fayllarini joylashtiradi",
+        "Video fayllarni avtomatik ravishda brauzerda ijro etadi",
+        "Matnli fayllarni tahrirlash uchun muharrir ochadi"
+      ],
+      "answer": "Foydalanuvchiga o'z qurilmasidan fayl tanlash va serverga yuklash imkonini beradi"
+    },
+    {
+      "question": "<input type=\"hidden\"> nima uchun kerak?",
+      "options": [
+        "Matn yozish maydonini kattalashtirish uchun",
+        "Foydalanuvchiga ko'rinmaydigan, lekin serverga yuboriladigan ma'lumotlarni saqlash uchun",
+        "Videolarni yashirin ravishda yuklash uchun",
+        "Sayt dizaynini yashirish uchun"
+      ],
+      "answer": "Foydalanuvchiga ko'rinmaydigan, lekin serverga yuboriladigan ma'lumotlarni saqlash uchun"
+    },
+    {
+      "question": "readonly atributi inputda qanday cheklov o'rnatadi?",
+      "options": [
+        "Input maydonini butunlay ishlamaydigan qilib qo'yadi",
+        "Ma'lumotni o'qish mumkin, lekin uni o'zgartirib bo'lmaydi",
+        "Inputni yashirin holatga o'tkazadi",
+        "Matn rangini o'zgartirib yuboradi"
+      ],
+      "answer": "Ma'lumotni o'qish mumkin, lekin uni o'zgartirib bo'lmaydi"
+    },
+    {
+      "question": "disabled atributi inputda nimani anglatadi?",
+      "options": [
+        "Maydonni ishlamaydigan qilib qo'yadi va qiymati serverga yuborilmaydi",
+        "Maydonni majburiy to'ldirilishi kerak bo'lgan holatga keltiradi",
+        "Input maydonini vizual jihatdan kattalashtiradi",
+        "Faqat raqam kiritishiga ruxsat beradi"
+      ],
+      "answer": "Maydonni ishlamaydigan qilib qo'yadi va qiymati serverga yuborilmaydi"
+    },
+    {
+      "question": "<form action=\"\"> atributi qanday ahamiyatga ega?",
+      "options": [
+        "Sahifaga CSS uslublarini qo'shadi",
+        "Formadagi matnlar shriftini belgilaydi",
+        "Ma'lumotlar yuboriladigan serverdagi URL manzilini ko'rsatadi",
+        "Formaning fon rangini belgilaydi"
+      ],
+      "answer": "Ma'lumotlar yuboriladigan serverdagi URL manzilini ko'rsatadi"
+    },
+      {
+      "question": "GET metodining asosiy xususiyati nima?",
+      "options": [
+        "Ma'lumotlarni yashirin tarzda yuboradi",
+        "Ma'lumotlarni URL manziliga qo'shib yuboradi",
+        "Faqat rasmlarni yuborish uchun xizmat qiladi",
+        "Faqat backend tillari bilan ishlaydi"
+      ],
+      "answer": "Ma'lumotlarni URL manziliga qo'shib yuboradi"
+    },
+    {
+      "question": "POST metodining afzalligi nimada?",
+      "options": [
+        "Ma'lumotlarni URL manzilda ochiq ko'rsatadi",
+        "Sahifani tezroq yangilash imkonini beradi",
+        "Ma'lumotlarni so'rov tanasida yashirin yuboradi va hajmi cheklanmagan",
+        "Faqat CSS bilan ishlatilganda samarali bo'ladi"
+      ],
+      "answer": "Ma'lumotlarni so'rov tanasida yashirin yuboradi va hajmi cheklanmagan"
+    },
+        {
+      "question": "<strong> va <b> teglarining semantik farqi nimada?",
+      "options": [
+        "Farqi yo'q, ikkalasi ham matnni qalin qiladi",
+        "<b> muhim matn, <strong> esa shunchaki bezak",
+        "<strong> semantik muhim matn, <b> esa vizual qalinlashtiradi",
+        "<strong> tegi HTML5 da o'chirilgan"
+      ],
+      "answer": "<strong> semantik muhim matn, <b> esa vizual qalinlashtiradi"
+    },
+            {
+      "question": "<em> tegi matnga qanday tas'ir o'tkazadi?",
+      "options": [
+        "Matnni qalin holatga keltiradi",
+        "Matnga urg'u beradi va uni qiya (italic) ko'rinishda chiqaradi",
+        "Matn ostiga chiziq chizadi",
+        "Matnni sahifaning markaziga suradi"
+      ],
+      "answer": "Matnga urg'u beradi va uni qiya (italic) ko'rinishda chiqaradi"
+    },
+                {
+      "question": "<br> tegi qanday vazifani bajaradi?",
+      "options": [
+        "Matnda yangi xatboshi boshlaydi",
+        "Sahifaga yangi rasm qo'shadi",
+        "Matnni yangi qatordan boshlashni ta'minlaydi (line break)",
+        "Jadval strukturasini yaratadi"
+      ],
+      "answer": "Matnni yangi qatordan boshlashni ta'minlaydi (line break)"
+    },
+      {
+      "question": "<hr> tegi nimani anglatadi?",
+      "options": [
+        "Matn shriftini o'zgartiradi",
+        "Video player joylashtiradi",
+        "Gorizontal ajratuvchi chiziq chizadi",
+        "Tashqi veb-saytlarga havola beradi"
+      ],
+      "answer": "Gorizontal ajratuvchi chiziq chizadi"
+    },
+      {
+      "question": "<h1> tegidan foydalanishni asosiy qoidasi nima?",
+      "options": [
+        "Eng kichik shriftli matn bo'lishi kerak",
+        "Sahifaning eng muhim va yagona asosiy sarlavhasini bildiradi",
+        "Faqat havolalar uchun ishlaydi",
+        "Video va media fayllarga nom berish uchun xizmat qiladi"
+      ],
+      "answer": "Sahifaning eng muhim va yagona asosiy sarlavhasini bildiradi"
+    },
+          {
+      "question": "<ul> tegi nima uchun xizmat qiladi",
+      "options": [
+        "Raqamlangan tartibli ro'yxat yaratadi",
+        "Jadval strukturasini quradi",
+        "Tartibsiz, belgili (bullet) ro'yxat yaratadi",
+        "Faqat form elementlarini guruhlaydi"
+      ],
+      "answer": "Tartibsiz, belgili (bullet) ro'yxat yaratadi"
+    },
+              {
+      "question": "<title> tegi qayerda joylashishi kerak?",
+      "options": [
+        "<body> bo'limining eng boshida",
+        "<footer> qismida",
+        "<head> bo'limining ichida",
+        "Navigatsiya menyusida"
+      ],
+      "answer": "<head> bo'limining ichida"
+    },
+                  {
+      "question": "<body> bo'limi nimani o'z ichiga oladi?",
+      "options": [
+        "Faqat yashirin meta ma'lumotlarini",
+        "Faqat tashqi CSS fayllariga havolalarni",
+        "Foydalanuvchiga ko'rinadigan barcha elementlarni",
+        "Brauzer sozlamalarini o'zgartiruvchi kodlarni"
+      ],
+      "answer": "Foydalanuvchiga ko'rinadigan barcha elementlarni"
+    }
+
+      ]
+    },
+    {
+      "title": "CSS",
+      "color": "#E0FDEF",
+      "icon": "/assets/icon-css.svg",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Colorful Style Sheets",
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets"
+          ],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": ["styles", "style", "class", "font-style"],
+          "answer": "style"
+        },
+        {
+          "question": "How do you insert a comment in a CSS file?",
+          "options": [
+            "// this is a comment //",
+            "/* this is a comment */",
+            "-- this is a comment --",
+            "<!-- this is a comment -->"
+          ],
+          "answer": "/* this is a comment */"
+        },
+        {
+          "question": "Which property is used to change the background color of an element?",
+          "options": ["color", "bgcolor", "background-color", "background"],
+          "answer": "background-color"
+        },
+        {
+          "question": "How do you apply a style to all <p> elements?",
+          "options": ["p { }", ".p { }", "#p { }", "all.p { }"],
+          "answer": "p { }"
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": ["font-style", "text-style", "font-family", "typeface"],
+          "answer": "font-family"
+        },
+        {
+          "question": "How do you make each word in a text start with a capital letter?",
+          "options": [
+            "text-transform: capitalize",
+            "text-transform: uppercase",
+            "text-style: capital",
+            "font-transform: capitalize"
+          ],
+          "answer": "text-transform: capitalize"
+        },
+        {
+          "question": "How do you select an element with the class name 'header'?",
+          "options": [".header", "#header", "header", "*header"],
+          "answer": ".header"
+        },
+        {
+          "question": "What is the default value of the 'position' property?",
+          "options": ["relative", "fixed", "absolute", "static"],
+          "answer": "static"
+        },
+        {
+          "question": "What is the purpose of the z-index property in CSS?",
+          "options": [
+            "To count the number of elements",
+            "To set the magnification level of an element",
+            "To specify the stack order of an element",
+            "To create a zoom effect"
+          ],
+          "answer": "To specify the stack order of an element"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "color": "#EBF0FF",
+      "icon": "/assets/icon-javascript.svg",
+      "questions": [
+        {
+          "question": "Which syntax is correct to output 'Hello World' in an alert box?",
+          "options": [
+            "alertBox('Hello World');",
+            "msg('Hello World');",
+            "alert('Hello World');",
+            "msgBox('Hello World');"
+          ],
+          "answer": "alert('Hello World');"
+        },
+        {
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            "call function myFunction()",
+            "call myFunction()",
+            "myFunction()",
+            "execute myFunction()"
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "How to write an IF statement in JavaScript?",
+          "options": ["if i = 5 then", "if (i == 5)", "if i == 5", "if i = 5"],
+          "answer": "if (i == 5)"
+        },
+        {
+          "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+          "options": [
+            "if (i <> 5)",
+            "if i =! 5 then",
+            "if (i != 5)",
+            "if i not = 5"
+          ],
+          "answer": "if (i != 5)"
+        },
+        {
+          "question": "How does a FOR loop start?",
+          "options": [
+            "for (i = 0; i <= 5)",
+            "for i = 1 to 5",
+            "for (i <= 5; i++)",
+            "for (i = 0; i <= 5; i++)"
+          ],
+          "answer": "for (i = 0; i <= 5; i++)"
+        },
+        {
+          "question": "How can you add a single-line comment in JavaScript?",
+          "options": [
+            "'This is a single-line comment",
+            "//This is a single-line comment",
+            "<!--This is a single-line comment-->",
+            "/* This is a single-line comment */"
+          ],
+          "answer": "//This is a single-line comment"
+        },
+        {
+          "question": "What is the correct way to write a JavaScript array?",
+          "options": [
+            "var colors = (1:'red', 2:'green', 3:'blue')",
+            "var colors = ['red', 'green', 'blue']",
+            "var colors = 'red', 'green', 'blue'",
+            "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+          ],
+          "answer": "var colors = ['red', 'green', 'blue']"
+        },
+        {
+          "question": "How do you find the number with the highest value of x and y?",
+          "options": [
+            "Math.ceil(x, y)",
+            "top(x, y)",
+            "Math.max(x, y)",
+            "Math.highest(x, y)"
+          ],
+          "answer": "Math.max(x, y)"
+        },
+        {
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": ["-", "*", "=", "x"],
+          "answer": "="
+        },
+        {
+          "question": "What is the correct way to write a JavaScript object?",
+          "options": [
+            "var person = {firstName: 'John', lastName: 'Doe'};",
+            "var person = {firstName = 'John', lastName = 'Doe'};",
+            "var person = (firstName: 'John', lastName: 'Doe');",
+            "var person = (firstName = 'John', lastName = 'Doe');"
+          ],
+          "answer": "var person = {firstName: 'John', lastName: 'Doe'};"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "color": "#F6E7FF",
+      "icon": "/assets/icon-accessibility.svg",
+      "questions": [
+        {
+          "question": "What does 'WCAG' stand for?",
+          "options": [
+            "Web Content Accessibility Guidelines",
+            "Web Compliance Accessibility Guide",
+            "Web Content Accessibility Goals",
+            "Website Compliance and Accessibility Guidelines"
+          ],
+          "answer": "Web Content Accessibility Guidelines"
+        },
+        {
+          "question": "Which element is used to provide alternative text for images for screen reader users?",
+          "options": [
+            "<alt>",
+            "<figcaption>",
+            "<description>",
+            "<img alt='description'>"
+          ],
+          "answer": "<img alt='description'>"
+        },
+        {
+          "question": "What does ARIA stand for in web development?",
+          "options": [
+            "Accessible Rich Internet Applications",
+            "Advanced Responsive Internet Assistance",
+            "Accessible Responsive Internet Applications",
+            "Automated Responsive Internet Actions"
+          ],
+          "answer": "Accessible Rich Internet Applications"
+        },
+        {
+          "question": "Which of the following is not a principle of the WCAG?",
+          "options": [
+            "Perceivable",
+            "Dependable",
+            "Operable",
+            "Understandable"
+          ],
+          "answer": "Dependable"
+        },
+        {
+          "question": "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
+          "options": ["3:1", "4.5:1", "7:1", "2:1"],
+          "answer": "4.5:1"
+        },
+        {
+          "question": "Which of the following elements is inherently focusable, meaning it can receive focus without a 'tabindex' attribute?",
+          "options": ["<div>", "<span>", "<a href='...'>", "<p>"],
+          "answer": "<a href='...'>"
+        },
+        {
+          "question": "What is the purpose of the 'lang' attribute in an HTML page?",
+          "options": [
+            "To specify the scripting language",
+            "To define the character set",
+            "To indicate the language of the page content",
+            "To declare a language pack"
+          ],
+          "answer": "To indicate the language of the page content"
+        },
+        {
+          "question": "Which guideline ensures that content is accessible by keyboard as well as by mouse?",
+          "options": [
+            "Keyboard Accessible",
+            "Mouse Independence",
+            "Device Independence",
+            "Operable Controls"
+          ],
+          "answer": "Keyboard Accessible"
+        },
+        {
+          "question": "What is the role of 'skip navigation' links in web accessibility?",
+          "options": [
+            "To skip over primary navigation to the main content",
+            "To provide shortcuts to different sections of the website",
+            "To help users skip unwanted sections like advertisements",
+            "To bypass broken links in the navigation"
+          ],
+          "answer": "To skip over primary navigation to the main content"
+        },
+        {
+          "question": "Which of these tools can help in checking the accessibility of a website?",
+          "options": [
+            "W3C Validator",
+            "Google Lighthouse",
+            "CSS Validator",
+            "JavaScript Console"
+          ],
+          "answer": "Google Lighthouse"
+        }
+      ]
+    }
+  ]
+}
