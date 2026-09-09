@@ -21,6 +21,7 @@ function Test({ questions: { questions, title, color, icon } }) {
 
         if (selectedAnswer == null) {
             toast.error('Please, select an answer')
+            return
         } else {
             if (selectedAnswer == correctAnswer) {
                 setAnswerStatus('correct')
