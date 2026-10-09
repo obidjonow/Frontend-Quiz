@@ -3,7 +3,7 @@
     {
       "title": "HTML",
       "color": "#FFF1E9",
-      "icon": "/assets/icon-html.svg",
+      "icon": "./assets/icon-html.svg",
       "questions": [
       {
       "question": "HTML tilining asosiy va fundamental vazifasi nima?",
@@ -311,84 +311,314 @@
     {
       "title": "CSS",
       "color": "#E0FDEF",
-      "icon": "/assets/icon-css.svg",
+      "icon": "./assets/icon-css.svg",
       "questions": [
-        {
-          "question": "What does CSS stand for?",
-          "options": [
-            "Colorful Style Sheets",
-            "Computer Style Sheets",
-            "Cascading Style Sheets",
-            "Creative Style Sheets"
-          ],
-          "answer": "Cascading Style Sheets"
-        },
-        {
-          "question": "Which HTML attribute is used to define inline styles?",
-          "options": ["styles", "style", "class", "font-style"],
-          "answer": "style"
-        },
-        {
-          "question": "How do you insert a comment in a CSS file?",
-          "options": [
-            "// this is a comment //",
-            "/* this is a comment */",
-            "-- this is a comment --",
-            "<!-- this is a comment -->"
-          ],
-          "answer": "/* this is a comment */"
-        },
-        {
-          "question": "Which property is used to change the background color of an element?",
-          "options": ["color", "bgcolor", "background-color", "background"],
-          "answer": "background-color"
-        },
-        {
-          "question": "How do you apply a style to all <p> elements?",
-          "options": ["p { }", ".p { }", "#p { }", "all.p { }"],
-          "answer": "p { }"
-        },
-        {
-          "question": "Which property is used to change the font of an element?",
-          "options": ["font-style", "text-style", "font-family", "typeface"],
-          "answer": "font-family"
-        },
-        {
-          "question": "How do you make each word in a text start with a capital letter?",
-          "options": [
-            "text-transform: capitalize",
-            "text-transform: uppercase",
-            "text-style: capital",
-            "font-transform: capitalize"
-          ],
-          "answer": "text-transform: capitalize"
-        },
-        {
-          "question": "How do you select an element with the class name 'header'?",
-          "options": [".header", "#header", "header", "*header"],
-          "answer": ".header"
-        },
-        {
-          "question": "What is the default value of the 'position' property?",
-          "options": ["relative", "fixed", "absolute", "static"],
-          "answer": "static"
-        },
-        {
-          "question": "What is the purpose of the z-index property in CSS?",
-          "options": [
-            "To count the number of elements",
-            "To set the magnification level of an element",
-            "To specify the stack order of an element",
-            "To create a zoom effect"
-          ],
-          "answer": "To specify the stack order of an element"
-        }
-      ]
+    {
+      "question": "CSS nimani anglatadi?",
+      "options": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "answer": "Cascading Style Sheets"
     },
     {
+      "question": "HTML fayliga tashqi CSS faylini ulash uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<style>",
+        "<css>",
+        "<link>",
+        "<script>"
+      ],
+      "answer": "<link>"
+    },
+    {
+      "question": "CSS-da class selector qaysi belgi bilan yoziladi?",
+      "options": [
+        "#",
+        "&",
+        "*",
+        "."
+      ],
+      "answer": "."
+    },
+    {
+      "question": "CSS-da ID selector qaysi belgi bilan yoziladi?",
+      "options": [
+        ".",
+        "#",
+        "*",
+        "@"
+      ],
+      "answer": "#"
+    },
+    {
+      "question": "CSS-da barcha elementlarni tanlash uchun qaysi selector ishlatiladi?",
+      "options": [
+        "#",
+        ".",
+        "*",
+        "all"
+      ],
+      "answer": "*"
+    },
+    {
+      "question": "Elementning matn rangini o'zgartirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "background-color",
+        "font-color",
+        "color",
+        "text-color"
+      ],
+      "answer": "color"
+    },
+    {
+      "question": "Elementning fon rangini o'zgartirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "background-color",
+        "color",
+        "font-color",
+        "bg-color"
+      ],
+      "answer": "background-color"
+    },
+    {
+      "question": "Matn o'lchamini o'zgartirish uchun qaysi CSS xususiyati ishlatiladi?",
+      "options": [
+        "size",
+        "text-size",
+        "font-height",
+        "font-size"
+      ],
+      "answer": "font-size"
+    },
+    {
+      "question": "Elementning kengligini belgilash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "height",
+        "width",
+        "size",
+        "length"
+      ],
+      "answer": "width"
+    },
+    {
+      "question": "Elementning balandligini belgilash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "width",
+        "long",
+        "height",
+        "size"
+      ],
+      "answer": "height"
+    },
+    {
+      "question": "Elementning ichki bo'shlig'ini belgilash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "padding",
+        "margin",
+        "border",
+        "spacing"
+      ],
+      "answer": "padding"
+    },
+    {
+      "question": "Elementning tashqi bo'shlig'ini belgilash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "padding",
+        "margin",
+        "border",
+        "gap"
+      ],
+      "answer": "margin"
+    },
+    {
+      "question": "Elementga chegara (border) berish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "outline",
+        "edge",
+        "line",
+        "border"
+      ],
+      "answer": "border"
+    },
+    {
+      "question": "Element burchaklarini yumaloq qilish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "border-style",
+        "border-round",
+        "border-radius",
+        "radius"
+      ],
+      "answer": "border-radius"
+    },
+    {
+      "question": "Matnni qalin qilish uchun qaysi CSS xususiyati ishlatiladi?",
+      "options": [
+        "font-weight",
+        "font-style",
+        "text-bold",
+        "font-family"
+      ],
+      "answer": "font-weight"
+    },
+    {
+      "question": "Matnni markazga tekislash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "align-text",
+        "text-align",
+        "text-position",
+        "align"
+      ],
+      "answer": "text-align"
+    },
+    {
+      "question": "Matnni katta harflarga o'tkazish uchun qaysi qiymat ishlatiladi?",
+      "options": [
+        "text: uppercase",
+        "text-transform: capitalize",
+        "font-case: upper",
+        "text-transform: uppercase"
+      ],
+      "answer": "text-transform: uppercase"
+    },
+    {
+      "question": "CSS-da izoh (comment) qanday yoziladi?",
+      "options": [
+        "// comment",
+        "<!-- comment -->",
+        "/* comment */",
+        "-- comment --"
+      ],
+      "answer": "/* comment */"
+    },
+    {
+      "question": "Elementni sahifadan butunlay olib tashlash uchun qaysi CSS ishlatiladi?",
+      "options": [
+        "visibility: hidden",
+        "display: none",
+        "opacity: 0",
+        "remove: true"
+      ],
+      "answer": "display: none"
+    },
+    {
+      "question": "Elementni ko'rinmas qilish, lekin uning joyini saqlab qolish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "display: none",
+        "opacity: none",
+        "visibility: hidden",
+        "hidden: true"
+      ],
+      "answer": "visibility: hidden"
+    },
+    {
+      "question": "Sichqoncha element ustiga olib borilganda stil berish uchun qaysi pseudo-class ishlatiladi?",
+      "options": [
+        ":hover",
+        ":active",
+        ":focus",
+        ":visited"
+      ],
+      "answer": ":hover"
+    },
+    {
+      "question": "Element bosilganda stil berish uchun qaysi pseudo-class ishlatiladi?",
+      "options": [
+        ":hover",
+        ":focus",
+        ":active",
+        ":visited"
+      ],
+      "answer": ":active"
+    },
+    {
+      "question": "Input elementi fokusga tushganda qaysi pseudo-class ishlatiladi?",
+      "options": [
+        ":hover",
+        ":active",
+        ":focus",
+        ":checked"
+      ],
+      "answer": ":focus"
+    },
+    {
+      "question": "position xususiyatining standart qiymati qaysi?",
+      "options": [
+        "relative",
+        "absolute",
+        "fixed",
+        "static"
+      ],
+      "answer": "static"
+    },
+    {
+      "question": "Elementni ota elementiga nisbatan joylashtirish uchun qaysi position qiymati ishlatiladi?",
+      "options": [
+        "static",
+        "absolute",
+        "relative",
+        "fixed"
+      ],
+      "answer": "absolute"
+    },
+    {
+      "question": "Elementni ekranga nisbatan bir joyda qotirib qo'yish uchun qaysi position qiymati ishlatiladi?",
+      "options": [
+        "absolute",
+        "relative",
+        "fixed",
+        "static"
+      ],
+      "answer": "fixed"
+    },
+    {
+      "question": "Flexboxni yoqish uchun qaysi CSS kodi ishlatiladi?",
+      "options": [
+        "display: block",
+        "display: box",
+        "flex: display",
+        "display: flex"
+      ],
+      "answer": "display: flex"
+    },
+    {
+      "question": "Flex elementlarini gorizontal yo'nalishda markazlashtirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "align-items",
+        "justify-content",
+        "text-align",
+        "place-items"
+      ],
+      "answer": "justify-content"
+    },
+    {
+      "question": "Flex elementlarini vertikal yo'nalishda markazlashtirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "justify-content",
+        "vertical-align",
+        "text-align",
+        "align-items"
+      ],
+      "answer": "align-items"
+    },
+    {
+      "question": "Elementga soya berish uchun qaysi CSS xususiyati ishlatiladi?",
+      "options": [
+        "element-shadow",
+        "text-shadow",
+        "box-shadow",
+        "shadow-box"
+      ],
+      "answer": "box-shadow"
+    }
+  ]
+},
+      {
       "title": "JavaScript",
       "color": "#EBF0FF",
-      "icon": "/assets/icon-javascript.svg",
+      "icon": "./assets/icon-javascript.svg",
       "questions": [
         {
           "question": "Which syntax is correct to output 'Hello World' in an alert box?",
@@ -485,7 +715,7 @@
     {
       "title": "Accessibility",
       "color": "#F6E7FF",
-      "icon": "/assets/icon-accessibility.svg",
+      "icon": "./assets/icon-accessibility.svg",
       "questions": [
         {
           "question": "What does 'WCAG' stand for?",

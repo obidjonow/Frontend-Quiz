@@ -1,37 +1,47 @@
+/* =================================
+   FONTS (Rubik: 300, 400, 400 italic, 500)
+================================= */
+
 /* rubik-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  src: url("./fonts/rubik-v28-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/rubik-v28-latin-300.woff2") format("woff2");
 }
+
 /* rubik-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/rubik-v28-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/rubik-v28-latin-regular.woff2") format("woff2");
 }
+
 /* rubik-italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Rubik";
   font-style: italic;
   font-weight: 400;
-  src: url("./fonts/rubik-v28-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/rubik-v28-latin-italic.woff2") format("woff2");
 }
+
 /* rubik-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/rubik-v28-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/rubik-v28-latin-500.woff2") format("woff2");
 }
 
-/* custom css */
+/* =================================
+   VARIABLES
+================================= */
+
 :root {
   --purple-color: #a729f5;
   --dark-navy-color: #313e51;
@@ -59,7 +69,6 @@
   --dark-navy-color: #ffffff;
   --prue-white-color: #3b4d66;
 
-  --body-bg-image: url("./assets/pattern-background-desktop-dark.svg");
   --body-bg-image: url("../assets/pattern-background-desktop-dark.svg");
   --body-bg-image-tablet: url("../assets/pattern-background-tablet-dark.svg");
   --body-bg-image-mobile: url("../assets/pattern-background-mobile-dark.svg");
@@ -67,6 +76,10 @@
   --sun-icon: url("../assets/icon-moon-light.svg");
   --moon-icon: url("../assets/icon-sun-light.svg");
 }
+
+/* =================================
+   RESET / BASE
+================================= */
 
 *,
 *::after,
@@ -97,6 +110,11 @@ a {
   display: inline-block;
 }
 
+button,
+input {
+  font-family: inherit;
+}
+
 html,
 body,
 #root {
@@ -114,6 +132,7 @@ main {
 
 body {
   min-height: 100vh;
+  font-synthesis-weight: none; /* yo'q og'irlikni sun'iy qalin qilmaydi */
   font-family: var(--main-font-family);
   font-weight: 500;
   background-image: var(--body-bg-image);
@@ -184,11 +203,15 @@ body.dark-mode .btn {
   background-color: rgba(167, 41, 245, 0.5);
 }
 
-/* HEADER START */
+/* =================================
+   HEADER
+================================= */
+
 .header {
   padding-top: 83px;
   margin-bottom: 85px;
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -261,9 +284,11 @@ header input {
   background-color: #ffffff;
   border-radius: 50%;
 }
+
 .dark-btn > span span:last-child {
   visibility: hidden;
 }
+
 .dark-btn > span span:first-child {
   transition: transform 0.3s ease;
 }
@@ -272,9 +297,10 @@ header input:checked + span span:first-child {
   transform: translateX(100%);
 }
 
-/* HEADER FOOTER */
+/* =================================
+   HOME SECTION
+================================= */
 
-/* HOME SECTION */
 .home-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -320,7 +346,10 @@ header input:checked + span span:first-child {
   width: 100%;
 }
 
-/* QUIZ PART */
+/* =================================
+   QUIZ PART
+================================= */
+
 .quiz-container {
   padding-bottom: 172px;
 }
@@ -353,7 +382,7 @@ header input:checked + span span:first-child {
 .test-title {
   margin-bottom: auto;
   line-height: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .test-proccess-container {
@@ -489,16 +518,13 @@ body.dark-mode .test-label:has(> input:checked) .test-letter {
   flex-direction: column;
   align-items: center;
   margin-bottom: 32px;
+  box-shadow: 0px 16px 40px rgba(143, 160, 193, 0.14);
 }
 
 .test-completed .menu-item {
   box-shadow: none;
   margin-bottom: 40px;
   padding: 0;
-}
-
-.test-completed-body {
-  box-shadow: 0px 16px 40px rgba(143, 160, 193, 0.14);
 }
 
 .test-completed-body .big-text {
@@ -520,6 +546,7 @@ footer {
   justify-content: center;
   gap: 10px;
   padding: 15px 0;
+
   a {
     color: var(--dark-navy-color);
   }
@@ -539,13 +566,835 @@ footer {
   }
 }
 
-/* RESPONSIVE PART */
+/* =================================
+   STUDENT LOGIN
+================================= */
 
-@media screen and (max-width: 900px) {
-  .result-container {
-    grid-template-columns: 1fr;
+.student-page {
+  min-height: 100vh;
+  background-color: var(--light-grey-color);
+  background-image: var(--body-bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--dark-navy-color);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ---------- TOP BAR ---------- */
+
+.student-topbar {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 50px 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- ACADEMY LOGO ---------- */
+
+.academy-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.academy-logo-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #f6e7ff;
+  color: var(--purple-color);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.academy-logo div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.academy-logo strong {
+  color: var(--dark-navy-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.academy-logo span {
+  color: var(--gray-navy-color);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* ---------- THEME BUTTON ---------- */
+
+.student-theme-btn {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  font-size: 0;
+}
+
+.student-theme-btn::before,
+.student-theme-btn::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.student-theme-btn::before {
+  background-image: var(--moon-icon);
+}
+
+.student-theme-btn::after {
+  background-image: var(--sun-icon);
+}
+
+body.dark-mode .student-theme-btn::before {
+  opacity: 1;
+}
+
+body.dark-mode .student-theme-btn::after {
+  opacity: 0;
+}
+
+body.light .student-theme-btn::before {
+  opacity: 0;
+}
+
+body.light .student-theme-btn::after {
+  opacity: 1;
+}
+
+/* ---------- LOGIN CENTER ---------- */
+
+.student-login-wrapper {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 80px;
+}
+
+/* ---------- LOGIN CARD ---------- */
+
+.student-login-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 48px;
+  background-color: var(--prue-white-color);
+  border-radius: 24px;
+  box-shadow: 0px 16px 40px rgba(143, 160, 193, 0.14);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+body.dark-mode .student-login-card {
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- LOGIN HEADING ---------- */
+
+.login-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-label {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background-color: #f6e7ff;
+  color: var(--purple-color);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+body.dark-mode .login-label {
+  background-color: rgba(167, 41, 245, 0.15);
+}
+
+.login-heading h1 {
+  margin: 18px 0 12px;
+  color: var(--dark-navy-color);
+  font-family: var(--main-font-family);
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.login-heading p {
+  margin: 0;
+  color: var(--gray-navy-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ---------- FORM ---------- */
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.student-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-field label {
+  color: var(--dark-navy-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.student-field input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  background-color: var(--light-grey-color);
+  color: var(--dark-navy-color);
+  font-family: var(--main-font-family);
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.student-field input::placeholder {
+  color: var(--gray-navy-color);
+}
+
+.student-field input:focus {
+  border-color: var(--purple-color);
+}
+
+/* ---------- INPUT (ikonkali) ---------- */
+
+.student-input {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 20px;
+  background-color: var(--light-grey-color);
+  border: 3px solid transparent;
+  border-radius: 24px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.student-input > span {
+  font-size: 20px;
+}
+
+.student-input input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--dark-navy-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.student-input input::placeholder {
+  color: var(--gray-navy-color);
+}
+
+.student-input:focus-within {
+  border-color: var(--purple-color);
+}
+
+/* ---------- SUBMIT BUTTON ---------- */
+
+.student-submit {
+  width: 100%;
+  height: 64px;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 24px;
+  background-color: var(--purple-color);
+  color: var(--prue-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-family: var(--main-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.student-submit:hover {
+  background-color: rgba(167, 41, 245, 0.7);
+  transform: translateY(-2px);
+}
+
+.student-submit span:last-child {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.student-submit:hover span:last-child {
+  transform: translateX(5px);
+}
+
+/* ---------- LOGIN INFO ---------- */
+
+.login-info {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--gray-navy-color);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body.dark-mode .student-input {
+  background-color: #313e51;
+}
+
+body.dark-mode .student-input input {
+  color: #ffffff;
+}
+
+body.dark-mode .student-input input::placeholder {
+  color: #abc1e1;
+}
+
+/* =================================
+   STUDENT INFO (pill)
+================================= */
+
+.student-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 25px;
+  padding: 8px 17px 8px 8px;
+  background-color: var(--prue-white-color);
+  border: 1px solid rgba(167, 41, 245, 0.12);
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(143, 160, 193, 0.12);
+}
+
+.student-info-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--purple-color);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.student-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.student-info-text span {
+  color: var(--gray-navy-color);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.student-info-text strong {
+  color: var(--dark-navy-color);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body.dark-mode .student-info {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* =================================
+   STUDENT QUIZ MODAL
+================================= */
+
+.student-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(49, 62, 81, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+.student-modal {
+  width: 100%;
+  max-width: 470px;
+  padding: 42px;
+  background-color: var(--prue-white-color);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(49, 62, 81, 0.25);
+  animation: studentModalShow 0.25s ease;
+}
+
+@keyframes studentModalShow {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.97);
   }
 
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.student-modal-heading {
+  margin-bottom: 30px;
+}
+
+.student-modal-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--purple-color);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.student-modal-heading h2 {
+  margin: 0 0 10px;
+  color: var(--dark-navy-color);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.student-modal-heading p {
+  margin: 0;
+  color: var(--gray-navy-color);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.student-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.dark-mode .student-modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .student-modal {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .student-field input {
+  background-color: #3b4d66;
+}
+
+/* =================================
+   RESULT PAGE
+================================= */
+
+/* Natija chiqqanda o'quvchi "pill"i yashiriladi, header ixchamlashadi */
+body:has(.result-page) .student-info {
+  display: none;
+}
+
+body:has(.result-page) .header {
+  padding-top: clamp(20px, 4vh, 40px);
+  margin-bottom: clamp(16px, 3vh, 32px);
+}
+
+.result-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 5vw, 80px);
+  padding: clamp(30px, 5vh, 50px) 0 20px;
+}
+
+/* ---------- CHAP TOMON ---------- */
+
+.result-left {
+  max-width: 560px;
+}
+
+.result-completed {
+  display: inline-block;
+  margin-bottom: clamp(12px, 2vh, 20px);
+  font-size: clamp(13px, 1.1vw, 16px);
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--gray-navy-color);
+}
+
+.result-title {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(44px, min(6.2vw, 9vh), 88px);
+  line-height: 1.05;
+  font-weight: 500;
+  color: var(--dark-navy-color);
+}
+
+.result-title span:first-child {
+  font-weight: 300;
+}
+
+.result-title span:last-child {
+  color: var(--purple-color);
+}
+
+.result-description {
+  max-width: 520px;
+  margin: clamp(16px, 3vh, 28px) 0 clamp(20px, 4vh, 36px);
+  font-size: clamp(16px, 1.5vw, 21px);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--gray-navy-color);
+}
+
+.result-description strong {
+  font-weight: 500;
+  color: var(--dark-navy-color);
+}
+
+.result-student {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.5vw, 20px);
+  margin-bottom: clamp(20px, 3.5vh, 32px);
+}
+
+.result-avatar {
+  width: clamp(60px, 5.5vw, 80px);
+  height: clamp(60px, 5.5vw, 80px);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: var(--purple-color);
+  color: #fff;
+  font-size: clamp(24px, 2.4vw, 34px);
+  font-weight: 500;
+  box-shadow: 0 12px 30px rgba(167, 41, 245, 0.3);
+}
+
+.result-student span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 400;
+  color: var(--gray-navy-color);
+}
+
+.result-student h2 {
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--dark-navy-color);
+}
+
+.result-message {
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--dark-navy-color);
+}
+
+/* ---------- O'NG TOMON ---------- */
+
+.result-right {
+  width: 100%;
+  max-width: 580px;
+  justify-self: end;
+  padding: clamp(22px, 2.6vw, 40px);
+  border-radius: clamp(22px, 2.2vw, 32px);
+  background: var(--prue-white-color);
+  box-shadow: 0 20px 60px rgba(49, 62, 81, 0.12);
+}
+
+.result-subject {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: clamp(16px, 2.5vh, 28px);
+  border-bottom: 1px solid rgba(98, 108, 127, 0.18);
+}
+
+.result-subject-icon {
+  width: clamp(48px, 4.2vw, 64px);
+  height: clamp(48px, 4.2vw, 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.result-subject-icon img {
+  width: 55%;
+  height: 55%;
+}
+
+.result-subject span {
+  font-size: clamp(18px, 1.7vw, 24px);
+  font-weight: 500;
+  color: var(--dark-navy-color);
+}
+
+.result-score {
+  padding: clamp(16px, 3vh, 32px) 0;
+  text-align: center;
+}
+
+.result-score-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: clamp(12px, 1vw, 15px);
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--gray-navy-color);
+}
+
+.result-score-number {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.result-score-number strong {
+  font-size: clamp(72px, min(8.5vw, 13vh), 120px);
+  line-height: 1;
+  font-weight: 500;
+  color: var(--dark-navy-color);
+}
+
+.result-score-number span {
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 400;
+  color: var(--gray-navy-color);
+}
+
+.result-percentage {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 22px;
+  border-radius: 30px;
+  background: rgba(167, 41, 245, 0.12);
+  color: var(--purple-color);
+  font-size: clamp(15px, 1.4vw, 20px);
+  font-weight: 500;
+}
+
+.result-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(8px, 1vw, 14px);
+  margin-bottom: clamp(16px, 3vh, 28px);
+}
+
+.result-info div {
+  padding: clamp(14px, 2.2vh, 20px) 8px;
+  text-align: center;
+  border-radius: 18px;
+  background: var(--light-grey-color);
+}
+
+.result-info strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--dark-navy-color);
+}
+
+.result-info span {
+  font-size: clamp(11px, 1vw, 14px);
+  font-weight: 400;
+  color: var(--gray-navy-color);
+}
+
+.result-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(8px, 1vw, 14px);
+}
+
+.result-home-btn,
+.result-again-btn {
+  height: clamp(54px, 7vh, 66px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: clamp(15px, 1.3vw, 18px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.result-home-btn {
+  background: var(--purple-color);
+  color: #fff;
+}
+
+.result-again-btn {
+  background: var(--light-grey-color);
+  color: var(--dark-navy-color);
+}
+
+.result-home-btn:hover,
+.result-again-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- RESULT: PLANSHET va TELEFON ---------- */
+
+@media (max-width: 900px) {
+  .result-page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .result-left,
+  .result-right {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  .result-title {
+    font-size: clamp(40px, 9vw, 64px);
+  }
+
+  .result-score-number strong {
+    font-size: clamp(72px, 16vw, 100px);
+  }
+}
+
+@media (max-width: 500px) {
+  .result-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .result-home-btn,
+  .result-again-btn {
+    height: 54px;
+  }
+}
+
+/* =================================
+   RESPONSIVE: STUDENT / LOGIN
+================================= */
+
+@media (max-width: 600px) {
+  .student-topbar {
+    padding: 30px 24px 0;
+  }
+
+  .academy-logo-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .academy-logo strong {
+    font-size: 14px;
+  }
+
+  .academy-logo span {
+    font-size: 8px;
+  }
+
+  .student-login-wrapper {
+    padding: 30px 20px 50px;
+  }
+
+  .student-login-card {
+    padding: 32px 24px;
+    border-radius: 24px;
+  }
+
+  .login-heading h1 {
+    font-size: 30px;
+  }
+
+  .login-heading p {
+    font-size: 14px;
+  }
+
+  .student-input,
+  .student-submit {
+    height: 58px;
+    border-radius: 16px;
+  }
+
+  .student-input input {
+    font-size: 16px;
+  }
+
+  .student-submit {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .student-modal {
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .student-modal-heading h2 {
+    font-size: 25px;
+  }
+
+  .student-info {
+    margin-bottom: 20px;
+  }
+}
+
+/* =================================
+   RESPONSIVE: HOME / QUIZ
+================================= */
+
+@media screen and (max-width: 900px) {
   .test-text {
     font-size: 18px;
   }
@@ -573,10 +1422,6 @@ footer {
   }
 
   .home-content h1 {
-    margin-bottom: 16px;
-  }
-
-  .result-container .home-title {
     margin-bottom: 16px;
   }
 
