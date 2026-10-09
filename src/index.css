@@ -1044,7 +1044,7 @@ body:has(.result-page) .header {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: start;
   gap: clamp(32px, 5vw, 80px);
-  padding: clamp(30px, 5vh, 50px) 0 20px;
+  padding: clamp(30px, 6vh, 50px) 0 20px;
 }
 
 /* ---------- CHAP TOMON ---------- */
