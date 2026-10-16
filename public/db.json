@@ -413,22 +413,22 @@
           "answer": "height"
         },
         {
-          "question": "Elementning ichki bo'shlig'ini belgilash uchun qaysi xususiyat ishlatiladi?",
-          "options": [
-            "padding",
-            "margin",
-            "border",
-            "spacing"
-          ],
-          "answer": "padding"
-        },
-        {
-          "question": "Elementning tashqi bo'shlig'ini belgilash uchun qaysi xususiyat ishlatiladi?",
+          "question": "CSS da element ichidagi matn bilan uning chegarasi orasidagi masofani belgilash uchun qaysi xususiyat ishlatiladi?",
           "options": [
             "padding",
             "margin",
             "border",
             "gap"
+          ],
+          "answer": "padding"
+        },
+        {
+          "question": "CSS da ikkita element orasidagi masofani belgilash uchun qaysi xususiyat ishlatiladi?",
+          "options": [
+            "padding",
+            "margin",
+            "border",
+            "font-size"
           ],
           "answer": "margin"
         },
@@ -503,14 +503,14 @@
           "answer": "display: none"
         },
         {
-          "question": "Elementni ko'rinmas qilish, lekin uning joyini saqlab qolish uchun qaysi xususiyat ishlatiladi?",
+          "question": "CSS da matnning tagiga chiziq chizish uchun qaysi xususiyat ishlatiladi?",
           "options": [
-            "display: none",
-            "opacity: none",
-            "visibility: hidden",
-            "hidden: true"
+            "font-line: underline",
+            "text-decoration: underline",
+            "text-style: underline",
+            "font-decoration: underline"
           ],
-          "answer": "visibility: hidden"
+          "answer": "text-decoration: underline"
         },
         {
           "question": "Sichqoncha element ustiga olib borilganda stil berish uchun qaysi pseudo-class ishlatiladi?",
@@ -573,32 +573,32 @@
           "answer": "fixed"
         },
         {
-          "question": "Flexboxni yoqish uchun qaysi CSS kodi ishlatiladi?",
+          "question": "CSS da elementlarni bir qatorga yonma-yon joylashtirish uchun qaysi kod ishlatiladi?",
           "options": [
             "display: block",
-            "display: box",
-            "flex: display",
-            "display: flex"
+            "display: flex",
+            "display: none",
+            "display: inline"
           ],
           "answer": "display: flex"
         },
         {
-          "question": "Flex elementlarini gorizontal yo'nalishda markazlashtirish uchun qaysi xususiyat ishlatiladi?",
+          "question": "CSS da bir nechta elementni gorizontal yo'nalishda (chapga yoki o'ngga) joylashtirish va ular orasidagi masofani boshqarish uchun qaysi xususiyat ishlatiladi?",
           "options": [
             "align-items",
             "justify-content",
-            "text-align",
-            "place-items"
+            "font-size",
+            "border-radius"
           ],
           "answer": "justify-content"
         },
         {
-          "question": "Flex elementlarini vertikal yo'nalishda markazlashtirish uchun qaysi xususiyat ishlatiladi?",
+          "question": "CSS da bir nechta elementni vertikal yo'nalishda (yuqoriga yoki pastga) tekislash uchun qaysi xususiyat ishlatiladi?",
           "options": [
             "justify-content",
-            "vertical-align",
             "text-align",
-            "align-items"
+            "align-items",
+            "background-color"
           ],
           "answer": "align-items"
         },
