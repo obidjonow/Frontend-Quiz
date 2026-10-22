@@ -304,6 +304,206 @@
             "Brauzer sozlamalarini o'zgartiruvchi kodlarni"
           ],
           "answer": "Foydalanuvchiga ko'rinadigan barcha elementlarni"
+        },
+        {
+          "question": "HTML hujjatining to'g'ri boshlang'ich deklaratsiyasi qaysi?",
+          "options": [
+            "<html5>",
+            "<!DOCTYPE html>",
+            "<document html>",
+            "<!HTML>"
+          ],
+          "answer": "<!DOCTYPE html>"
+        },
+        {
+          "question": "HTML hujjatida belgilar kodirovkasini UTF-8 deb belgilash uchun qaysi meta teg ishlatiladi?",
+          "options": [
+            "<meta charset=\"UTF-8\">",
+            "<meta type=\"UTF-8\">",
+            "<charset>UTF-8</charset>",
+            "<encoding value=\"UTF-8\">"
+          ],
+          "answer": "<meta charset=\"UTF-8\">"
+        },
+        {
+          "question": "Tashqi JavaScript faylini HTML hujjatiga ulash uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<javascript src=\"app.js\">",
+            "<link rel=\"js\" href=\"app.js\">",
+            "<script src=\"app.js\"></script>",
+            "<code src=\"app.js\"></code>"
+          ],
+          "answer": "<script src=\"app.js\"></script>"
+        },
+        {
+          "question": "HTML hujjatiga tashqi CSS faylini ulashda qaysi atribut fayl manzilini ko'rsatadi?",
+          "options": [
+            "src",
+            "href",
+            "alt",
+            "action"
+          ],
+          "answer": "href"
+        },
+        {
+          "question": "Tartiblangan ro'yxat yaratish uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<ul>",
+            "<li>",
+            "<ol>",
+            "<dl>"
+          ],
+          "answer": "<ol>"
+        },
+        {
+          "question": "Ro'yxat ichidagi bitta elementni belgilash uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<item>",
+            "<li>",
+            "<list>",
+            "<ol>"
+          ],
+          "answer": "<li>"
+        },
+        {
+          "question": "Jadvaldagi sarlavha katagini yaratish uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<td>",
+            "<tr>",
+            "<th>",
+            "<thead-cell>"
+          ],
+          "answer": "<th>"
+        },
+        {
+          "question": "HTML jadvalida bitta qatorni belgilash uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<tr>",
+            "<td>",
+            "<row>",
+            "<table-row>"
+          ],
+          "answer": "<tr>"
+        },
+        {
+          "question": "Bir nechta ustunni egallaydigan jadval katagini yaratishda qaysi atribut ishlatiladi?",
+          "options": [
+            "rowspan",
+            "colspan",
+            "spanrows",
+            "colwidth"
+          ],
+          "answer": "colspan"
+        },
+        {
+          "question": "Audio faylni brauzerda ijro etish uchun qaysi HTML tegi ishlatiladi?",
+          "options": [
+            "<sound>",
+            "<mp3>",
+            "<audio>",
+            "<music>"
+          ],
+          "answer": "<audio>"
+        },
+        {
+          "question": "Videoni HTML sahifasiga joylashtirish uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<media>",
+            "<movie>",
+            "<video>",
+            "<play>"
+          ],
+          "answer": "<video>"
+        },
+        {
+          "question": "HTML hujjatida boshqa sahifa yoki resursni ichki ramkada ko'rsatish uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<framebox>",
+            "<iframe>",
+            "<embedpage>",
+            "<window>"
+          ],
+          "answer": "<iframe>"
+        },
+        {
+          "question": "Bir nechta elementni mantiqiy guruhlash uchun ishlatiladigan, o'zi alohida semantik ma'noga ega bo'lmagan umumiy blok tegi qaysi?",
+          "options": [
+            "<section>",
+            "<article>",
+            "<div>",
+            "<main>"
+          ],
+          "answer": "<div>"
+        },
+        {
+          "question": "Matn ichidagi qisqa bo'lakni guruhlash uchun ko'pincha qaysi umumiy inline teg ishlatiladi?",
+          "options": [
+            "<span>",
+            "<div>",
+            "<aside>",
+            "<nav>"
+          ],
+          "answer": "<span>"
+        },
+        {
+          "question": "Hujjat yoki bo'limning pastki qismidagi ma'lumotlar uchun qaysi semantik teg mos keladi?",
+          "options": [
+            "<header>",
+            "<footer>",
+            "<nav>",
+            "<main>"
+          ],
+          "answer": "<footer>"
+        },
+        {
+          "question": "Saytning navigatsiya havolalarini guruhlash uchun qaysi semantik teg ishlatiladi?",
+          "options": [
+            "<navigate>",
+            "<links>",
+            "<nav>",
+            "<menu-link>"
+          ],
+          "answer": "<nav>"
+        },
+        {
+          "question": "Mustaqil, alohida mazmun sifatida tarqatilishi mumkin bo'lgan maqola yoki post uchun qaysi semantik teg mos?",
+          "options": [
+            "<article>",
+            "<span>",
+            "<br>",
+            "<label>"
+          ],
+          "answer": "<article>"
+        },
+        {
+          "question": "Input maydoniga tushuntiruvchi nom berib, uni shu maydon bilan bog'lash uchun qaysi teg ishlatiladi?",
+          "options": [
+            "<caption>",
+            "<label>",
+            "<legend>",
+            "<strong>"
+          ],
+          "answer": "<label>"
+        },
+        {
+          "question": "HTML formasida elektron pochta manzilini kiritish uchun qaysi input turi mos?",
+          "options": [
+            "type=\"mailbox\"",
+            "type=\"text-email\"",
+            "type=\"email\"",
+            "type=\"address\""
+          ],
+          "answer": "type=\"email\""
+        },
+        {
+          "question": "Havolani yangi brauzer oynasi yoki yangi tabda ochish uchun odatda qaysi atribut qiymati ishlatiladi?",
+          "options": [
+            "target=\"_self\"",
+            "target=\"_blank\"",
+            "open=\"new\"",
+            "window=\"new-tab\""
+          ],
+          "answer": "target=\"_blank\""
         }
       ]
     },
